@@ -2,12 +2,7 @@
 title: "Linear Regression"
 author: "Ayushi"
 date: "27/10/2020"
-output:
-  html_document:
-    keep_md: true
 ---
-
-
 
 ### Linear Regression:
 Linear Regression is a supervised machine learning algorithm. It establish relationship between continuous independent and continuous dependent variable.
@@ -358,25 +353,6 @@ Dividing data in 75-25[training(75)- testing(25)]
 ```r
 #install.packages("caret") ----install package if not installed
 library(caret)
-```
-
-```
-## Warning: package 'caret' was built under R version 3.6.3
-```
-
-```
-## Loading required package: lattice
-```
-
-```
-## Loading required package: ggplot2
-```
-
-```
-## Warning: package 'ggplot2' was built under R version 3.6.3
-```
-
-```r
 set.seed(123)
 index<-createDataPartition(house_data$floors,p=0.75,list = F)
 head(index)
