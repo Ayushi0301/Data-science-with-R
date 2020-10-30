@@ -239,7 +239,7 @@ house$yr_renovated[house$yr_renovated==2020]<-0
 boxplot(house$price)
 ```
 
-![](Data-science-with-R/outlier-1.png)<!-- -->
+![](doc/outlier-1.png)<!-- -->
 
 ``` r
 #UW<-Q3+1.5*IQR
