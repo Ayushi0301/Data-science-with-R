@@ -308,17 +308,6 @@ house_data$bedrooms<-as.factor(house_data$bedrooms)
 ``` r
 #install.packages("caret") ----install package if not installed
 library(caret)
-```
-
-    ## Warning: package 'caret' was built under R version 3.6.3
-
-    ## Loading required package: lattice
-
-    ## Loading required package: ggplot2
-
-    ## Warning: package 'ggplot2' was built under R version 3.6.3
-
-``` r
 set.seed(123)
 index<-createDataPartition(house_data$floors,p=0.75,list = F)
 head(index)
